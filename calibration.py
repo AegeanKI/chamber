@@ -2,7 +2,10 @@ import numpy as np
 import cv2 as cv
 import glob
 import tqdm
-from screenshot import take_screen_shots
+from screenshot import download_video, take_screen_shots 
+
+# download calibration video
+download_video(download_path="data/")
 
 # take screen shots from video and save as images
 print("taking screen shots from video...")

@@ -1,5 +1,18 @@
 import cv2
 import os
+import gdown
+
+def download_video(download_path="data/"):
+    """
+        download the calibration video
+    """
+    if os.path.exists("data/calibration.mp4"):
+        print("calibration video already exists")
+        return
+    url = "https://drive.google.com/uc?id=1A884ErnhJZRgZMrbvH0dRS2FRX-WSyCm"
+    output_path = os.path.join(download_path, "calibration.mp4")
+    gdown.download(url, output_path, quiet=False)
+
 
 def take_screen_shots(video_path="data/calibration.mp4", 
                       output_path="data/calibration_images", 
