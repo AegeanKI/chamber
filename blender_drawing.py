@@ -43,6 +43,8 @@ cam.lens = f_x / w * sensor_width_in_mm
 pixel_aspect = f_y / f_x
 scene.render.pixel_aspect_x = 1.0
 scene.render.pixel_aspect_y = pixel_aspect
+scene.render.resolution_x = w
+scene.render.resolution_y = h
 
 # Render the scene
 data = bproc.renderer.render()
