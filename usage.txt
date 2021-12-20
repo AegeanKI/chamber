@@ -1,0 +1,3 @@
+blenderproc run blender_drawing.py
+blenderproc debug blender_drawing.py
+blenderproc vis hdf5 output/0.hdf5
